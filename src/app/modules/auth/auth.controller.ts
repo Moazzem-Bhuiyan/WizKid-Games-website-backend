@@ -4,7 +4,6 @@ import { authServices } from './auth.service';
 import sendResponse from '../../utils/sendResponse';
 import httpStatus from 'http-status';
 import config from '../../config';
-import { User } from '../user/user.models';
 
 // login
 const login = catchAsync(async (req: Request, res: Response) => {
@@ -29,7 +28,6 @@ const login = catchAsync(async (req: Request, res: Response) => {
     data: result,
   });
 });
-
 
 // change password
 const changePassword = catchAsync(async (req: Request, res: Response) => {
