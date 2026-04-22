@@ -6,7 +6,7 @@ import { defaultTask } from './app/utils/defaultTask';
 import colors from 'colors';
 
 let server: Server;
-let currentPort: number = Number(config.port) | 5000;
+let currentPort: number = Number(config.port) || 5000;
 
 async function main() {
   try {
